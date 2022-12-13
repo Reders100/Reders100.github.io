@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS Modificable-->
+    <link rel="stylesheet" href="../static/css/main.css">
+    <!--Título-->
+    <title>Marcap</title>
+
+</head>
+<body>
+   
+<nav>
+    <ul class="nav">
+        <li><a href="{{ url_for('home') }}">Inicio</a></li>
+        <li><a href="home.html">Proyectos</a></li>
+        <li><a href="{{ url_for('about') }}">Acerca de</a></li>
+        <li><a href="about.html">Fotografías</a></li>
+        <li style="float:right"><a class="active" href="home.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+</body>
+</html>
