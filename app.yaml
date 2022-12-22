@@ -1,0 +1,11 @@
+application: App
+version: 1
+runtime: Python 3.7.1
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: App.py
+- url: /static
+  static_dir: static
